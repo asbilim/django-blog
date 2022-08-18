@@ -18,4 +18,5 @@ html{
 input{
     width:45rem;
     outline:none;
+    text-transform: none !important;
 }
