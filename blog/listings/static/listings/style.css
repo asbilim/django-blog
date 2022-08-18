@@ -1,14 +1,21 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-transform: capitalize;
-    transition: .8s ease-in-out;
-    text-decoration: none;
-    list-style: none;
-}
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+    text-transform: capitalize ;
+    transition: .2s ease-in-out ;
+    text-decoration: none ;
+    list-style: none ;
+    outline: none !important;
+} 
+
 
 html{
-    overflow-x: hidden;
-    font-size:62.5%;
+    overflow-x: hidden !important;
+    font-size:62.5% !important;
+}
+
+input{
+    width:45rem;
+    outline:none;
 }
