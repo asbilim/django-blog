@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: .8s ease-in-out;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    overflow-x: hidden;
+    font-size:62.5%;
+}

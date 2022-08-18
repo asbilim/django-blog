@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to my blog</title>
+    {% load tailwind_tags %}
 </head>
 <body>
-    <p class="text-center text-red-500">hello home</p>
+    {% tailwind_css %}
+    
+    <header class="header">
+        <nav class="nav navbar bg-slate-800 px-8 py-12">
+
+        </nav>
+    </header>
+
 </body>
 </html>

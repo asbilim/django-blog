@@ -2,5 +2,5 @@ from django.shortcuts import render
 
 def home(request):
 
-    return render('listings/layout.html')
+    return render(request,'listings/layout.html')
 

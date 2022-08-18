@@ -72,8 +72,12 @@ INTERNAL_IPS =['127.0.0.1',]
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd8dfgm9vh5t8b3',
+        'USER':'gnmtnvkujltzoc',
+        'HOST':'ec2-52-207-15-147.compute-1.amazonaws.com',
+        'PASSWORD':'f3019474e5bb51c75b6c2c68a66d942dc4cb48eb27a6141f743ce99d9699ccc7',
+        'PORT':'5432'
     }
 }
 
