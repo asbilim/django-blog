@@ -30,7 +30,8 @@ INSTALLED_APPS = [
     'theme',
     'listings',
     'django_browser_reload',
-    'authentication'
+    'authentication',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [

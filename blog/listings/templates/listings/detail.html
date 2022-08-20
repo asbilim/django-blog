@@ -1,0 +1,21 @@
+{% extends 'listings/layout.html' %}
+
+{% block content %}
+    {% load static%}
+
+    <div class="advice">
+        <h2 class="text-6xl text-slate-800 text-center">This blog was written by {{calling}}</h2>
+    </div>
+    
+    <div class="jumbotron shadow font-mono">
+        <div class="text flex flex-col gap-12 justify-start ">
+            <h2 class="text-6xl text-slate-800 uppercase">{{blog.title}}</h2>
+            <p class="text-3xl lowercase">{{blog.description}}</p>
+            <p class="text-3xl text-orange-600">written by {{calling}}</p>
+        </div>
+        <img src="{% static 'listings/images/blog/blog.svg' %}" alt="" class="image">
+    </div>
+
+    <a href="{% url 'blog-all-posts' %}" class ="text-2xl w-56 h-16 text-white rounded bg-orange-400 text-center hover:bg-orange-500 font-mono px-12 py-4 cursor-pointer transition-colors ease-in-out">Posts</a>
+
+{% endblock %}

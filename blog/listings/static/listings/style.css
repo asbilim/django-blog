@@ -82,6 +82,20 @@ input{
     width:17rem;
 }
 
+.posts {
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(20rem,40rem));
+    gap: 2rem;
+}
+
+.posts .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem .5rem;
+}
 .choice .row{
 
     width: 55rem;
