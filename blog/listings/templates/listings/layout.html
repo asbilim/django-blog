@@ -17,13 +17,15 @@
             <a href="{% url 'blog-home' %}" class="text-6xl text-white"> Gee<span class="text-orange-500 uppercase font-semibold">k</span>Blog </a>
             <ul class="flex flex-row gap-8">
                 <li class="text-white text-4xl hover:text-orange-300 cursor-pointer transition-colors ease-linear"><a href="{% url 'blog-home' %}" >Blog</a></li>
-                <li class="text-white text-4xl hover:text-orange-300 cursor-pointer transition-colors ease-linear"><a href="#" ></a>Search</li>
+                {% if request.user.is_authenticated %}
+                    <li class="text-white text-4xl hover:text-orange-300 cursor-pointer transition-colors ease-linear"><a href="#" ></a>{{request.user}}</li>
+                {% endif %}
                 <li class="text-white text-4xl hover:text-orange-300 cursor-pointer transition-colors ease-linear"><a href="{% url 'login' %}">Login</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="main mt-4 mb-4 flex justify-center items-center">
+    <main class="main mt-4 mb-4 flex flex-col justify-center items-center">
         {% block content%}
         {% endblock %}
     </main>
