@@ -75,7 +75,7 @@ input{
     gap: 1rem;
 }
 
-.choice .row button{
+.choice .row a{
     line-height:1;
     padding: 1.25rem 3rem;
     border-radius:.5rem;

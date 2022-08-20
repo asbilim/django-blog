@@ -20,12 +20,12 @@
         <div class="row border">
             <img src="{% static 'listings/images/read/read.svg' %}" alt="read-image">
             <p class="text-3xl lowercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis numquam saepe at architecto, sequi eos reprehenderit similique accusamus hic autem, veritatis reiciendis repellendus. Neque assumenda, esse deserunt fugiat voluptatibus magni?</p>
-            <button class="text-3xl bg-blue-500 text-center text-white rounded-sm  ">Create</button>
+            <a href="{% url 'blog-post-create' %}" class="text-3xl bg-blue-500 text-center hover:bg-blue-800 text-white shadow-md rounded-sm  ">Create</a>
         </div>
         <div class="row border">
-            <img src="{% static 'listings/images/article/article.svg' %}" alt="">
+            <img src="{% static 'listings/images/article/article.svg' %}" alt="" >
             <p class="text-3xl lowercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis numquam saepe at architecto, sequi eos reprehenderit similique accusamus hic autem, veritatis reiciendis repellendus. Neque assumenda, esse deserunt fugiat voluptatibus magni?</p>
-            <button class="text-3xl bg-blue-500 text-center text-white rounded-sm  ">Explore</button>
+            <a href="#" class="text-3xl bg-blue-500 hover:bg-blue-800 shadow-md text-center text-white rounded-sm  ">Explore</a>
         </div>
     </div>
 

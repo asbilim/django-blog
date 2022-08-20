@@ -19,6 +19,7 @@ module.exports = {
          * Adjust the following line to match your project structure.
          */
         '../../**/templates/**/*.html',
+        '../../**/**/templates/**/*.html',
 
     ],
     theme: {
