@@ -7,7 +7,7 @@
     <p class="text-4xl text-slate-700 font-bold text-start ">Create your blog here</p> 
     <form method="post" class="flex flex-col shadow gap-y-8 p-4">
         <input type="text" name="title" id="id_title" class="border text-2xl p-4 hover:outline-slate-500  focus:ring focus:ring-orange-200" placeholder="Enter the title">
-        <input type="text" name="description" id="id_description" class="border text-2xl p-4 hover:outline-slate-500  focus:ring focus:ring-orange-200" placeholder="Description of the blog">
+        <textarea name="description" id="id_description" autocomplete="false" class="border text-2xl p-4 hover:outline-slate-500  focus:ring focus:ring-orange-200" placeholder="Description of the blog"></textarea>
         {% csrf_token %}
         <input type="submit" value="SAVE" class="text-2xl w-56 h-16 text-white rounded bg-orange-400 hover:bg-orange-500 font-mono px-12 py-4 cursor-pointer transition-colors ease-in-out">
     </form>
